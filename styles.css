@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e5e5e5;
+    ;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.textHead {
+    font-size: 12px;
+}
+
+.container {
+    width: 1083px;
+    height: 802px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.titPets {
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C4C4C4;
+    padding: 0 22px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 22px;
+
+}
+
+.petCard img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.petCard {
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #A1A1A1;
+    line-height: 1.5;
+    padding: 40px 0 0;
+    position: relative; 
+}
+
+.buttons {
+    position: absolute; 
+    top: 0; 
+    left: 0;   
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;  
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    color: #A1A1A1;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buttons .fa-pen-to-square,
+.buttons .fa-xmark {
+    font-size: 20px;
+}
+
+.modalStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1000;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:none;
+}
+
+.modalContent {
+    width: 500px;
+    height: 110px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.close {
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.buttonModal {
+    width: 120px;
+    background: #cccbcb;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 14px;
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;  
+}
